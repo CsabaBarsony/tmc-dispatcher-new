@@ -3,14 +3,25 @@
 <head>
 	<meta charset="UTF-8">
 	<title></title>
+
+	<link rel="stylesheet" href="lib/leaflet/leaflet.css" />
+
 	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" href="css/tmc_map.css" />
+	<link rel="stylesheet" href="css/tmc_control.css" />
 </head>
 <body>
 	<div ng-controller="DispatcherController">
-
+		<div class="tmc-control"></div>
+		<div id="map" class="tmc-map"></div>
 	</div>
 	<script type="text/javascript" src="lib/angular/angular.js"></script>
+	<script type="text/javascript" src="lib/leaflet/leaflet.js"></script>
+
 	<script type="text/javascript" src="scripts/app.js"></script>
 	<script type="text/javascript" src="scripts/dispatcher_controller.js"></script>
+	<script type="text/javascript" src="scripts/tmc_api/status_service.js"></script>
+	<script type="text/javascript" src="scripts/control/tmc_control.js"></script>
+	<script type="text/javascript" src="scripts/map/tmc_map.js"></script>
 </body>
 </html>
